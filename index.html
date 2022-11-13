@@ -1,76 +1,84 @@
 <!DOCTYPE html>
 <html lang="PT-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="img/icons8-front-end-64.png">
+    <link rel="icon" type="image/x-icon" href="icons8-front-end-64.png">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
     <title>Lucas Marques</title>
 </head>
+
 <body>
 
     <div class="parent">
 
-    <div class="sidebar">
+        <div class="sidebar">
 
-    <div class="sidebar-pos">
+            <div class="sidebar-pos">
 
-        <div class="img">
-            <img src="img/lucas.jpeg">
+                <div class="img">
+                    <img src="lucas.jpeg">
 
-        </div> 
+                </div>
 
-        <div class="menu">
-            <a class="selected" href="#">Sobre</a>
-            <a href="#">Experiencia</a>
-            <a href="#">Educação</a>
-        </div>
-
-    </div>
-    
-    </div>
-
-    <div class="content">
-
-        <section class="descricao">
-
-            <h2>Lucas Marques </h2>
-            <h3>CIDADE - <span>DE CONTATO -</span>   EMAIL - REDE</h3>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-            
-            <div class="icons">
-
-            <a href="https://www.instagram.com/lucasmf99/"> <img src="img/instagram.svg" class="img-social"></a>
-            <a href="https://www.instagram.com/lucasmf99/"> <img src="img/github.svg" class="img-social"></a>
+                <div class="menu">
+                    <a class="selected" href="index.html">Sobre</a>
+                    <a href="experiencia.html">Experiencia</a>
+                    <a href="educacao.html">Educação</a>
+                </div>
 
             </div>
-        
-        </section>
+
+        </div>
+
+        <div class="content">
+
+            <section class="descricao">
+
+                <h2>Lucas Marques </h2>
+                <h3>CIDADE - <span>DE CONTATO -</span> EMAIL - REDE</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                    leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+                    with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                    publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+                <div class="icons">
+
+                    <a href="https://www.instagram.com/lucasmf99/"> <img src="instagram.svg" class="img-social"></a>
+                    <a href="https://www.instagram.com/lucasmf99/"> <img src="github.svg" class="img-social"></a>
+
+                </div>
+
+            </section>
 
 
-        <script>
+            <script>
 
-        function typeWrite(elemento) {
-            const textoArray = elemento.innerHTML.split('');
-            elemento.innerHTML = '';
-            textoArray.forEach((letra, i) => {
-                setTimeout(()=> elemento.innerHTML += letra, 75 * i );
-            });
-        }
+                function typeWrite(elemento) {
+                    const textoArray = elemento.innerHTML.split('');
+                    elemento.innerHTML = '';
+                    textoArray.forEach((letra, i) => {
+                        setTimeout(() => elemento.innerHTML += letra, 75 * i);
+                    });
+                }
 
-        const titulo = document.querySelector('h2');
-        typeWrite(titulo);
-
-
+                const titulo = document.querySelector('h2');
+                typeWrite(titulo);
 
 
 
-        </script>
+
+
+            </script>
 
 
 </body>
+
 </html>
